@@ -1,0 +1,96 @@
+* {
+    font: italic 20px/2 cursive;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body::before {
+                        opacity: 0.5;
+                        content: "";
+                        width: 100%;
+                        height: 800px;
+                        z-index: -1;
+                        top: 0px;:
+                        position: absolute;
+                        background-size: 100%;
+                        background: url('/static/gym.jpeg') no-repeat center center;
+                        /*background: url('/static/bg.jpg') no-repeat center center;*/
+
+body {
+    background: url('https://www.pixelstalk.net/wp-content/uploads/images6/Fitness-Desktop-Wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    padding: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    padding: 3px 12px;
+}
+
+a {
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    border: 12px solid blue;
+    border-radius: 3px;
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: revert-layer;
+}
+
+.container {
+    margin: 30px 0px;
+    margin-left: 550px;
+    margin-right: -368px;
+}
+
+input,
+textarea {
+    display: block;
+    padding: 8px;
+    margin: 10px auto;
+    width: 40%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 5px 12px;
+    margin-left: 45%;
+    background: #302d2d;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active {
+    background-color: rgb(123, 180, 17);
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+
+/* http://localhost:3000/static/style.css*/

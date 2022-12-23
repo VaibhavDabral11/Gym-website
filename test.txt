@@ -1,0 +1,5 @@
+1. home ,about ,contact us(hover color: red).
+2. about (web page)
+3. home (web page)
+4. connect in mysql database  
+

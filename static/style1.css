@@ -1,0 +1,50 @@
+* {
+    font: italic 20px/2 cursive;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body::before {
+    opacity: 0.5;
+    content: "";
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    top: 0px;
+    position: absolute;
+    /* background: url('/static/download.jpeg') no-repeat center center; */
+
+
+/*background: url('/static/bg.jpg') no-repeat center center;*/
+
+body {
+    background: url('https://www.pixelstalk.net/wp-content/uploads/images6/Fitness-Desktop-Wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    padding: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    padding: 3px 12px;
+}
+
+a {
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    border: 12px solid blue;
+    border-radius: 3px;
+}
