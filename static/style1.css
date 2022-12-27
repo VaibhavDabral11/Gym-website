@@ -1,5 +1,5 @@
 * {
-    font: italic 20px/2 cursive;
+    font: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -47,4 +47,35 @@ a {
     background-color: blue;
     border: 12px solid blue;
     border-radius: 3px;
+}
+
+#container {
+    background: black;
+    opacity: 0.8;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 100px;
+    margin-bottom: 89px;
+    margin-right: 19px;
+    margin-left: 20px;
+    margin-top: 26px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 13px;
+    padding-top: 76px;
+}
+
+#muss {
+    margin-left: 737px;
+    color: white;
+    font-size: revert-layer;
+    margin-top: -56px;
+    margin-bottom: revert;
+}
+
+.para {
+    color: white;
+    margin-bottom: inherit;
+    font-size: 26px;
+    font: Arial, Helvetica, sans-serif;
 }
