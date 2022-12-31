@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Using plain html in Pug</title> -->
-    <title>Buscle Fitness | Contact Us</title>
+    <title>Muscle Fitness | Contact Us</title>
      <link rel = "icon" href ="../static/Myproject.png" type = "image/x-icon">
     style 
         include ../static/style.css
@@ -17,7 +17,7 @@
         <ul>
             <li><a href="/home">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/Contact">Contact Us</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -28,9 +28,9 @@
             | This is a plain html using pug 
         </p> -->
 
-        <form action="/form" method="post" id="contact">
+        <form action="/contact-us" method="post" id="contact">
             <input type="text" name="name" id="name" placeholder="Enter your name">
-            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="number" name="age" id="age" placeholder="Enter your age">
             <input type="text" name="gender" id="gender" placeholder="Enter your gender">
             <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
             <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you.."></textarea>

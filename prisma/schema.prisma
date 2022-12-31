@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+model gymwebsite_data{
+  id Int @id @default(autoincrement())
+  Name String @db.VarChar(255) @unique
+  Age Int? 
+  Gender String @db.VarChar(255)
+  Address String @db.VarChar(255)
+  About_more String  
+}
+//create migrations using this command npx prisma migrate dev
+// npx prisma stdio to see data 
