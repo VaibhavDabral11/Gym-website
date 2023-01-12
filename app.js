@@ -71,8 +71,8 @@ app.post("/contact-us", async(req, res) => {
     res.status(200).render('index.pug', params);
 
 });
-app.get("/readall", async(req, res) => {
-    const users = await prisma.gymwebsite_data.findMany();
+app.get("/readall", async(req, res) => { //return promise
+    const users = await prisma.gymwebsite_data.findMany(); //fetch api
     res.json(users);
     console.log(users);
 

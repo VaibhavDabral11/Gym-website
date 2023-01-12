@@ -18,4 +18,4 @@ model gymwebsite_data{
   About_more String  
 }
 //create migrations using this command npx prisma migrate dev
-// npx prisma stdio to see data 
+// npx prisma studio to see data 
