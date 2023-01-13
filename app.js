@@ -71,13 +71,50 @@ app.post("/contact-us", async(req, res) => {
     res.status(200).render('index.pug', params);
 
 });
+
 app.get("/readall", async(req, res) => { //return promise
     const users = await prisma.gymwebsite_data.findMany(); //fetch api
+    //const myJSON = JSON.stringify(obj);
+
     res.json(users);
     console.log(users);
 
 });
 
+// const cors = require('cors')
+
+// let corsOptions = {
+//     origin: ['*'],
+// }
+
+// app.use(cors(corsOptions))
+// app.all('/', function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "X-Requested-With");
+//     next()
+
+// });
+const cors = require('cors');
+const corsOptions = {
+    origin: "[*]",
+    credentials: true, //access-control-allow-credentials:true
+    optionSuccessStatus: 200
+}
+app.use(cors(corsOptions))
+    // app.use(cors(corsOptions));
+    // app.use(function(req, res, next) {
+    //     //Enabling CORS
+    //     res.header("Access-Control-Allow-Origin", "*");
+    //     res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+    //     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, , Accept, x - client - key, x - client - token, x - client - secret, Authorization ");
+    //     next();
+    // });
+
+// app.use(function(request, response, next) {
+//     response.header("Access-Control-Allow-Origin", "*");
+//     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+// });
 
 // START THE SERVER
 app.listen(port, () => {

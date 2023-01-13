@@ -187,3 +187,18 @@
         border: 12px solid blue;
         border-radius: 3px;
     }
+    
+    #insta {
+        padding: 0;
+        padding-left: 30px;
+    }
+    
+    #facebook {
+        padding: 0;
+        padding-left: 12px;
+    }
+    
+    #twitter {
+        padding: 0;
+        padding-left: 12px;
+    }

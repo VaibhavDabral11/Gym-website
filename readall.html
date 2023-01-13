@@ -1,0 +1,58 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th {
+        color: #fff;
+    }
+</style>
+
+
+<table class="table table-striped">
+    <tr class="bg-info">
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>About_more</th>
+    </tr>
+
+    <tbody id="myTable">
+
+    </tbody>
+</table>
+
+<script>
+    var myArray = []
+
+
+    $.ajax({
+        method: 'GET',
+        header: '*',
+        url: "http://127.0.0.1:5000/readall",
+        success: function(response) {
+            myArray = response.json()
+            buildTable(myArray)
+            console.log(myArray)
+        }
+    })
+
+
+
+    function buildTable(data) {
+        var table = document.getElementById('myTable')
+
+        for (var i = 0; i < data.length; i++) {
+            var row = `<tr>
+							<td>${data[i].Name}</td>
+							<td>${data[i].Age}</td>
+							<td>${data[i].Address}</td>
+							<td>${data[i].About_more}</td>
+					  </tr>`
+            table.innerHTML += row
+
+
+        }
+    }
+</script>
