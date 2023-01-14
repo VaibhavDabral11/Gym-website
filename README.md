@@ -2,12 +2,15 @@
 This website is based on pug framework and javascript . This project have three page home . about and contact us . The screenshort od these pages are given bellow :
 
 ## Home: (http://localhost:5000/home) 
-![image](https://user-images.githubusercontent.com/116658648/209619173-3f71977e-54ba-4fbc-a10a-522e1129378b.png)
-![image](https://user-images.githubusercontent.com/116658648/209619203-ab9a63bb-458e-4c9f-bceb-aa9651e0b382.png)
+![image](https://user-images.githubusercontent.com/116658648/212462103-849c0059-ad82-4d5a-9781-8d3696d91527.png)
+![image](https://user-images.githubusercontent.com/116658648/212462122-b3f3113d-37f6-4028-9349-9bb9324728ba.png)
 
 ## About: (http://localhost:5000/about)
-![image](https://user-images.githubusercontent.com/116658648/209620949-3c065e1c-8861-4b25-9d36-539273f0a8d5.png)
-![image](https://user-images.githubusercontent.com/116658648/209620977-417b0bdc-093a-4973-b44e-487ca24efd67.png)
+![image](https://user-images.githubusercontent.com/116658648/212462145-a66f1b25-eacd-4233-9337-f473b76d88e2.png)
 
 ## contact Us: (http://localhost:5000/contact)
-![image](https://user-images.githubusercontent.com/116658648/209621092-c516f0b8-4113-4bac-81d8-a9f83f7ed90f.png)
+![image](https://user-images.githubusercontent.com/116658648/212462176-0d29a69b-a71d-4a09-8d6f-03dd8c982aee.png)
+
+## Database (http://127.0.0.1:5000/readall)
+
+![image](https://user-images.githubusercontent.com/116658648/212462211-5c458d7f-9eac-40cc-afba-c411ddebeb0f.png)
